@@ -1,0 +1,11 @@
+extends layout
+
+block content
+         section.form-container 
+            form(method='POST' action='/new')
+                label(for='text') Message
+                input(type='text' name='text' id='text')
+                label(for='user') User
+                input(type='text' name='user' id='user')
+                button(type='submit') Submit
+  
